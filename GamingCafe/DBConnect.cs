@@ -9,7 +9,7 @@ namespace GamingCafe
 {
     internal class DBConnect
     {
-        private static string strCon = @"Server=localhost,1433;Database=QuanLyCafe;User Id=GamingCafe;Password=123;Encrypt=True;TrustServerCertificate=True;";
+        private static string strCon = @"Server=localhost;Database=QuanLyCafe;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
         public static SqlConnection getConnection()
         {
             return new SqlConnection(strCon);
